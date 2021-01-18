@@ -43,7 +43,6 @@ class ProductList {
     constructor(data) {
         this.data = data;
         this.products = [];
-        //this.products = data.products;
     }
     ngOnInit() {
         this.data.loadProducts()
@@ -258,10 +257,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class DataService {
-    //public products = [{
-    //    title: "First Product",
-    //    price: 19.99
-    //}];
     constructor(http) {
         this.http = http;
         this.products = [];

@@ -4,7 +4,6 @@ let ProductList = class ProductList {
     constructor(data) {
         this.data = data;
         this.products = [];
-        //this.products = data.products;
     }
     ngOnInit() {
         this.data.loadProducts()
