@@ -5,5 +5,7 @@
     templateUrl: "shop.component.html"
 })
 export class Shop {
+   title: string;
+
 
 }

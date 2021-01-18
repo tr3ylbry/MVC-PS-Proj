@@ -19,6 +19,15 @@ let DataService = class DataService {
     get loginRequired() {
         return this.token.length == 0 || this.tokenExpiration > new Date();
     }
+    login(creds) {
+        return this.http
+            .post("/account/createtoken", creds)
+            .pipe(map((data) => {
+            this.token = data.token;
+            this.tokenExpiration = data.expiration;
+            return true;
+        }));
+    }
     addToOrder(product) {
         let item = this.order.items.find(i => i.productId == product.id);
         if (item) {
