@@ -1,6 +1,6 @@
 ﻿export class Order {
     orderId: number;
-    orderDate: Date;
+    orderDate: Date = new Date();
     orderNumber: string;
     items: Array<OrderItem> = new Array<OrderItem>();
 }

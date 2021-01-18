@@ -15,17 +15,23 @@ let DataService = class DataService {
             return true;
         }));
     }
-    addToOrder(newProduct) {
-        var item = new OrderItem();
-        item.productId = newProduct.id;
-        item.productArtist = newProduct.artist;
-        item.productArtId = newProduct.artId;
-        item.productCategory = newProduct.category;
-        item.productSize = newProduct.size;
-        item.productTitle = newProduct.title;
-        item.unitPrice = newProduct.price;
-        item.quantity = 1;
-        this.order.items.push(item);
+    addToOrder(product) {
+        let item = this.order.items.find(i => i.productId == product.id);
+        if (item) {
+            item.quantity++;
+        }
+        else {
+            item = new OrderItem();
+            item.productId = product.id;
+            item.productArtist = product.artist;
+            item.productArtId = product.artId;
+            item.productCategory = product.category;
+            item.productSize = product.size;
+            item.productTitle = product.title;
+            item.unitPrice = product.price;
+            item.quantity = 1;
+            this.order.items.push(item);
+        }
     }
 };
 DataService = __decorate([
