@@ -22,4 +22,8 @@ export class ProductList {
                 }
             });
     }
+
+    addProduct(product: Product) {
+        this.data.addToOrder(product);
+    }
 }
