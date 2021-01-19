@@ -1,4 +1,5 @@
 import { __decorate } from "tslib";
+import { HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { map } from "rxjs/operators";
 import { Order, OrderItem } from "./order";
@@ -25,6 +26,16 @@ let DataService = class DataService {
             .pipe(map((data) => {
             this.token = data.token;
             this.tokenExpiration = data.expiration;
+            return true;
+        }));
+    }
+    checkout() {
+        var temp = this.order;
+        return this.http.post("/api/orders", this.order, {
+            headers: new HttpHeaders().set("Authorization", "Bearer " + this.token)
+        })
+            .pipe(map(response => {
+            this.order = new Order();
             return true;
         }));
     }

@@ -1,0 +1,59 @@
+[33mcommit eb724751966497732c8b8dfe3d9a21bde1c81904[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Trey Bryant <tbryant@aurasolutionsllc.com>
+Date:   Mon Jan 18 15:15:45 2021 -0700
+
+    token authentication working; all functionality up to basically the end of module 13 (minus server-side checking
+
+[33mcommit 4f9687d139d722da9bfa0cdad3d7b727f09c6e9f[m
+Author: Trey Bryant <tbryant@aurasolutionsllc.com>
+Date:   Mon Jan 18 14:43:36 2021 -0700
+
+    two way binding on login check working
+
+[33mcommit 7562072a2467691cebfed56ef99384e6d14ed4e1[m
+Author: Trey Bryant <tbryant@aurasolutionsllc.com>
+Date:   Mon Jan 18 14:25:54 2021 -0700
+
+    login authorization working for checking out
+
+[33mcommit 3288d44f9c2280c7a0f601f12aef79e1d7cb97b6[m
+Author: Trey Bryant <tbryant@aurasolutionsllc.com>
+Date:   Mon Jan 18 14:16:17 2021 -0700
+
+    routing to checkout page working
+
+[33mcommit d886ab2d2f0e4c571894e3e61d45bedd0ef802de[m
+Author: Trey Bryant <tbryant@aurasolutionsllc.com>
+Date:   Mon Jan 18 12:36:34 2021 -0700
+
+    cart subtotal functionality working
+
+[33mcommit b0615a939223de1753f416e9888d8f582a34603f[m
+Author: Trey Bryant <tbryant@aurasolutionsllc.com>
+Date:   Mon Jan 18 11:59:50 2021 -0700
+
+    now able to add items to teh cart and see the quantity and their subtotal
+
+[33mcommit b6f37dfbe4fdfebb4945e447adc31972e7973fb2[m
+Author: Trey Bryant <tbryant@aurasolutionsllc.com>
+Date:   Mon Jan 18 11:25:35 2021 -0700
+
+    now has functionality to 'add' things to car; count in cart changes
+
+[33mcommit b6addca32c2047a62128e21467130d3725ed1a3f[m
+Author: Trey Bryant <tbryant@aurasolutionsllc.com>
+Date:   Mon Jan 18 11:02:26 2021 -0700
+
+    added a template; the list of products is now formatted with image for each product and info
+
+[33mcommit 0e879439859443d6ee21ed9064cbd07339023b45[m
+Author: Trey Bryant <tbryant@aurasolutionsllc.com>
+Date:   Mon Jan 18 10:25:15 2021 -0700
+
+    added type safety in product showing functionality
+
+[33mcommit a0b9c2f203ee4207900cf136d597a03c8b23edf3[m
+Author: Trey Bryant <tbryant@aurasolutionsllc.com>
+Date:   Mon Jan 18 10:13:19 2021 -0700
+
+    At this point, everything should have more or less the functionality of everything taught through Module 12 (using services in angular), using the API; so shop should have a list products showing
